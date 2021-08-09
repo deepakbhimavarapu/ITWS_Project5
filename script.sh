@@ -17,7 +17,7 @@ done }< Indianplayers.csv
 for i in *.html
 do
 	d=$(pwd)
-	v='<a href="/"'{{site.baseurl}}'"/'$i'">'$i'</a><br>'
+	v='<a href="'{{site.baseurl}}'/'$i'">'$i'</a><br>'
     echo $v>>"$d""/index.html"
      
 done
